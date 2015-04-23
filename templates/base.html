@@ -149,6 +149,11 @@
     {% block banner %}{% endblock %}
 {% endif %}
 <!-- End Banner -->
+{% if SITESUBTITLE %}
+<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
+    {{ SITESUBTITLE }}
+</div>
+{% endif %}
 <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
     <div class="row">
         {% if not HIDE_SIDEBAR or ABOUT_ME %}
